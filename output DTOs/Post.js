@@ -13,9 +13,10 @@ module.exports = class OutputPost {
         }
 
         // formating
-        this.id = post._id,
+        this.id = post._id
         this.title = post.title
-        this.body = post.body,
+        this.body = post.body
+        this.image = post.image
         this.created = (post.created.toLocaleDateString('en-GB').toString()).replace(/\//g, '-');
     }
   }

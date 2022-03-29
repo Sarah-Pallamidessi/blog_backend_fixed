@@ -8,9 +8,7 @@ module.exports = class OutputPosts {
             const outputPost = new OutputPost(post)
 
             // formating
-            this.posts.push({ 
-                outputPost
-            })
+            this.posts.push(outputPost)
         })   
     }
   }
