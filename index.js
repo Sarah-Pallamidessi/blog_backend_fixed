@@ -19,7 +19,7 @@ mongoose
         app.use("/api", routes)
         app.use("/api", testing_routes)
 
-		app.listen(port, () => {
+		app.listen(process.env.PORT || port, () => {
 			console.log(`Example app listening on port ${port}`)
 		})
 	})
